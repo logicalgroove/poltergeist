@@ -83,7 +83,7 @@ module Capybara::Poltergeist
       command 'evaluate', script
     end
 
-    def keypress(page_id, key)
+    def keypress(key)
       command 'sendEvent', 'keypress', key
     end
 
