@@ -84,7 +84,7 @@ module Capybara::Poltergeist
     end
 
     def keypress(key)
-      command 'sendEvent', 'keypress', key
+      command 'keypress', key
     end
 
     def execute(script)

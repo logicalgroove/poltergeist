@@ -204,6 +204,10 @@ class Poltergeist.Browser
     @page.sendEvent('click', x, y)
     this.sendResponse({ click: { x: x, y: y } })
 
+  keypress: (key) ->
+    @page.sendEvent('keypress', key)
+    this.sendResponse({ keypress: { key: key } })
+
   drag: (page_id, id, other_id) ->
     this.node(page_id, id).dragTo this.node(page_id, other_id)
     this.sendResponse(true)
