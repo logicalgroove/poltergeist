@@ -114,6 +114,10 @@ module Capybara::Poltergeist
       browser.click_coordinates(x, y)
     end
 
+    def keypress(key)
+      browser.keypress(key)
+    end
+
     def evaluate_script(script)
       browser.evaluate(script)
     end
